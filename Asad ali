@@ -1,2 +1,39 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+void sum(int a,int b)
+{cout<<a+b<<endl;} 
+void sub(int a,int b) 
+{cout<<a-b<<endl;} 
+void prod(int a,int b) 
+{cout<<a*b<<endl;}
+
 void div(float a, float b) 
 {cout<<a/b<<endl;} 
+void rema(int a, int b) 
+{cout<<a%b<<endl;} 
+int main()
+{
+int a,b;
+cin>>a;
+cin>>b;
+cout<<"sum:";
+sum(a,b) ;
+   cout<<"subtract:";
+sub(a, b) ;
+cout<<"product:";
+prod(a, b) ;
+cout<<"divide:";
+div (a,b) ;
+cout<<"remainder:";
+rema(a, b);
+cout<<"square of a:";
+cout<<sqrt(a) <<endl;
+cout<<"square of b:";
+cout<<sqrt(b) <<endl;
+cout<<"log of a:";
+cout<<log(a) <<endl;
+cout<<"log of b:";
+cout<<log(b) <<endl;
+
+}
