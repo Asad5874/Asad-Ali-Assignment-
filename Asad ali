@@ -1,0 +1,2 @@
+void div(float a, float b) 
+{cout<<a/b<<endl;} 
