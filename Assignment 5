@@ -1,0 +1,97 @@
+#include<iostream>
+using namespace std;
+#include<conio.h>
+void ev_od()
+{
+	int n;
+	cout<<"ENTER A NUMBER"<<endl;
+	cin>>n;
+	if(n%2==0)
+		cout<<"EVEN"<<endl;
+	else
+	cout<<"ODD"<<endl;
+	
+}
+int ev_od2()
+{
+	int n;
+	cout<<"ENTER A NUMBER"<<endl;
+	cin>>n;
+	if(n%2==0)
+		return 0;
+	else
+ 		return 1;
+	
+}
+void ev_od3( int n)
+{
+
+	if(n%2==0)
+		cout<<"EVEN"<<endl;
+	else
+	cout<<"ODD"<<endl;
+	
+}
+int ev_od4(int n)
+{
+	if(n%2==0)
+		return 0;
+	else
+ 		return 1;
+	
+}
+int main()
+{
+	char m;
+	while(1)
+	{
+		
+		cout<<"1.FUNCTION WITH NO ARGUMENT AND NO RETURN VALUE"<<endl;
+		cout<<"2.FUNCTION WITH NO ARGUMENT AND RETURN VALUE"<<endl;
+		cout<<"3.FUNCTION WITH  ARGUMENT AND NO RETURN VALUE"<<endl;
+		cout<<"4.FUNCTION WITH  ARGUMENT AND  RETURN VALUE"<<endl;
+		cout<<"5.EXIT"<<endl;
+		m=getche();
+		cout<<endl;
+		if(m=='1')	
+			ev_od();
+		else if(m=='2')
+		{
+			int check=ev_od2();
+			if(check==0)
+	     		cout<<"EVEN"<<endl;
+			else
+				cout<<"ODD"<<endl;
+					
+		}
+		else if(m=='3')
+		{
+			int n;
+			cout<<"ENTER A NUMBER"<<endl;
+			cin>>n;
+			ev_od3(n);
+		}
+		else if(m=='4')
+		{
+			int n;
+			cout<<"ENTER A NUMBER"<<endl;
+			cin>>n;
+			int check2=ev_od4(n);
+			if(check2==0)
+	     		cout<<"EVEN"<<endl;
+			else
+				cout<<"ODD"<<endl;	
+				
+		}
+		else if(m=='5')
+			break;
+		else
+		{
+				cout<<"INVALID"<<endl;	
+			getch();	
+		}
+		
+	}
+	getch();
+	return 0;
+}
